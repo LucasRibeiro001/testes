@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+img{
+    width: 2.5rem;
+    border-radius: 25px;
+}
+
+header{
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h2{
+    font-size: 1.7rem;
+    font-weight: 800;
+}
+
+.logo i{
+    font-size: 2rem;
+    margin-right: 5px;
+    color: #07f;
+}
+
+.navigation {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.navigation a{
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.navigation a:hover{
+    transform: scale(1.1);
+}
+
+.navigation i{
+    font-size: 1.7rem;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+.container{
+    margin: 10px 50px;
+    height: 88vh;
+}
+
+.itens-receita{
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px;
+    background-color: #F1F0F7;
+    border-radius: 8px;
+}
+
+.itens-receita label{
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+}
+
+.itens-receita input{
+    margin-left: 20px;
+    padding: 7px;
+    border: 0;
+    border-radius: 7px;
+    outline: none;
+}
+
+.itens-receita button{
+    cursor: pointer;
+    padding: 10px;
+    width: 220px;
+    border-radius: 8px;
+    border: 0;
+    transition: all.3s ease;
+    background-color: #2D4678;
+    color: #fff;
+}
+
+.itens-receita button:hover{
+    background-color: #3c5d9e;
+}
+
+.itens-receita span{
+    margin-left: 8px ;
+    color: #07f;
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.tabela{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tabela table{
+    padding: 50px;
+    width: 860px;
+    border: 1px solid #F1F0F7;
+    border-radius: 10px;
+    box-shadow:  20px 20px 100px #f7f7f7;
+}
+
+.tabela td.title{
+    text-align: center;
+    width: 10px;
+}
+
+.tabela td.input{
+    text-align: center;
+    width: 100%;
+}
+
+.tabela td.input input{
+    border: 0;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+    outline: none;
+}
+
+.tabela td.input input::-webkit-inner-spin-button,
+.tabela td.input input::-webkit-outer-spin-button{
+    appearance: none;
+}
+
+.tabela table tr th{
+    font-size: 20px;
+    text-align: center;
+    padding: 0 10px;
+    color: #07f;
+}
+
+.tabela table tr.item td{
+    width: 90px;
+    font-size: 18px;
+    border-bottom: 1px solid #F1F0F7;
+    padding: 18px 20px;
+}
+
+.tabela table tr.item{
+    height: 60px;
+}
+
+.buttonArea-despesas{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    gap: 1rem;
+    justify-content: end;
+    padding: 10px;
+}
+
+.buttonArea-despesas button{
+    cursor: pointer;
+    background-color: /**/ #2D4678;
+    color: #fFF;
+    font-weight: 500;
+    border: 0;
+    padding: 12px;
+    border-radius: 10px;
+    transition: all .3s;
+}
+
+.buttonArea-despesas button:hover{
+    background-color:#3c5d9e;
+}
+
+.buttonArea-despesas input{
+    padding: 8px;
+    border: 0;
+    border-bottom:1px solid #a2a2a2 ;
+    outline: none;
+}
+
+/*///////////////////////////////////////////////////////////////////////////////*/
+
+.resultados{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.itens-resultados{
+    margin-top: 20px;
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.saldo, .saida{
+    padding: 15px;
+    width: 600px;
+    box-shadow:  20px 20px 100px #f7f7f7;
+    border-radius: 5px;
+    border:1px solid #F1F0F7;
+}
+
+.saldo h3, .saida h3{
+    font-size: 14px;
+}
+
+.saldo span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #07f;
+}
+
+.saida span{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(228, 27, 27);
+}
+
+#sd, #sl{
+    margin-left: 5px;
+}
+
+.link{
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.link a{
+    color: #07f;
+}

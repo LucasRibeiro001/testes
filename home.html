@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="website icon" type="png" href="/testelogin/website-icon.png">
+    <title>Finance | Controle Financeiro</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class='bx bx-dollar-circle'></i>
+            <h2>Finance</h2>
+        </div>
+        <nav class="navigation">
+            <a href="#">Painel principal</a>
+            <a href="#">Desempenho</a>
+            <a href="#">
+                <i class='bx bx-bell'></i>
+            </a>
+            <a href="#">
+                <img src="user-image.jpg">
+            </a>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="receitas">
+            <h2>Receitas</h2>
+            <div class="itens-receita">
+                <label>
+                    Receita fixa:
+                    <input type="number" id="r1" placeholder="R$ 0.00" step="0.01">
+                </label>
+                <label>
+                    Receita extra:
+                    <input type="number" id="r2" placeholder="R$ 0.00" step="0.01">
+                </label>
+                <div class="buutonArea-receitas">
+                    <button onclick="addRec()">Adicionar</button>
+                </div>
+                <label>
+                    Receita total: R$
+                    <span id="rtotal">0.00</span>
+                </label>
+            </div>
+        </div>
+
+
+        <div class="bottom">
+            <div class="despesas">
+                <h2>Despesas</h2>
+                <div class="itens-despesas">
+                    <div class="tabela">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Tipo</th>
+                                <th>Valor</th>
+                                <th>Vencimento</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="item">
+                                <td class="title">
+                                    Água
+                                </td>
+                                <td class="input">
+                                    <input type="number" id="c1" placeholder="R$ 0.00" step="0.01">
+                                </td>
+                                <td class="input">
+                                    <input type="date" id="data1">
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="title">
+                                    Energia
+                                </td>
+                                <td class="input">
+                                    <input type="number" id="c2" placeholder="R$ 0.00" step="0.01">
+                                </td>
+                                <td class="input">
+                                    <input type="date" id="data2">
+                                </td>
+                            </tr>
+                            <tr class="item">
+                                <td class="title">
+                                    Internet
+                                </td>
+                                <td class="input">
+                                    <input type="number" id="c3" placeholder="R$ 0.00" step="0.01">
+                                </td>
+                                <td class="input">
+                                    <input type="date" id="data3">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    <div class="buttonArea-despesas">
+                        <input type="text" placeholder="+ Nome da despesa">
+                        <button>Adicionar despesa</button>
+                        <button onclick="calc()">Calcular</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="resultados">
+                <h2>Resultados</h2>
+                <div class="itens-resultados">
+                    <div class="saldo">
+                        <h3>Saldo</h3>
+                        <span>R$</span><span id="sl"> 0.00</span>
+                    </div>
+                    <div class="saida">
+                        <h3>Saída</h3>
+                        <span>R$</span><span id="sd"> 0.00</span>
+                    </div>
+                </div>
+                <div class="link">
+                    <a href="#">Acessar desempenho mensal</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="home.js"></script>
+</body>
+
+</html>
